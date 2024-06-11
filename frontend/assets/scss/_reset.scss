@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Circe';
+  color: #2b2b2b;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+a {
+  color: #2b2b2b;
+  text-decoration: none;
+  transition: 0.3s all ease;
+
+  &:hover {
+    color: #39b100;
+  }
+}

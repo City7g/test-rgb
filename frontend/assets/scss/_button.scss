@@ -1,0 +1,51 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid #39b100;
+  border-radius: 2px;
+  background-color: #39b100;
+  transition: 0.3s ease;
+  transition-property: border-color, color, background-color;
+  -webkit-tap-highlight-color: transparent;
+
+  @media (pointer: fine) {
+    &:hover {
+      color: #fff;
+      border-color: #319800;
+      background-color: #319800;
+    }
+  }
+
+  &:focus-visible {
+    color: #fff;
+    border-color: #319800;
+    background-color: #319800;
+    outline-color: #319800;
+    box-shadow: 0 0 0 3px rgba(57, 177, 0, 0.25);
+  }
+
+  &:active {
+    color: #fff;
+    border-color: #297e00;
+    background-color: #297e00;
+  }
+
+  &:disabled {
+    color: #fff;
+    border-color: transparent;
+    background-color: rgba(57, 177, 0, 0.5);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
